@@ -1,0 +1,40 @@
+.seccion-tarjeta {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.contenido-seccion {
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagen-uniforme {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.estado-seccion {
+    min-height: 1.25rem;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.estado-seccion.cargando {
+    color: #6c757d;
+}
+
+.estado-seccion.error {
+    color: #b02a37;
+    font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+    .imagen-uniforme {
+        height: 180px;
+    }
+}
